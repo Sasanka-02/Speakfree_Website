@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Domain | SpeakFree, R26-IT-086</title>
+<meta name="description" content="Literature survey, research gap, research problem, objectives, methodology and technologies behind SpeakFree.">
+<link rel="icon" type="image/svg+xml" href="assets/logo/logo-icon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a href="index.html" class="brand">
+      <img src="assets/logo/logo-icon.svg" alt="" width="42" height="42">
+      <span><span class="brand-name">Speak<span class="free">Free</span></span><span class="brand-sub">R26-IT-086 &middot; SLIIT Research Project</span></span>
+    </a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+    <label for="nav-toggle" class="nav-burger" aria-hidden="true"><span></span></label>
+    <nav class="main-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="has-sub"><a href="domain.html" class="active" aria-current="page">Domain</a><ul class="sub"><li><a href="domain.html#literature-survey">Literature Survey</a></li><li><a href="domain.html#research-gap">Research Gap</a></li><li><a href="domain.html#research-problem">Research Problem</a></li><li><a href="domain.html#research-objectives">Research Objectives</a></li><li><a href="domain.html#methodology">Methodology</a></li><li><a href="domain.html#technologies">Technologies Used</a></li></ul></li>
+        <li class="has-sub"><a href="milestones.html">Milestones</a><ul class="sub"><li><a href="milestones.html#proposal">Project Proposal</a></li><li><a href="milestones.html#checklist-1">Check List Submission</a></li><li><a href="milestones.html#pp1">Progress Presentation 1</a></li><li><a href="milestones.html#pp2">Progress Presentation 2</a></li><li><a href="milestones.html#draft-thesis">Draft Thesis and Website Submission</a></li><li><a href="milestones.html#final-checklist">Final Check List Submission</a></li><li><a href="milestones.html#final">Final Assessment and Viva</a></li><li><a href="milestones.html#research-paper">Research Paper Submission</a></li><li><a href="milestones.html#final-thesis">Final Thesis Submission</a></li></ul></li>
+        <li><a href="documents.html">Documents</a></li>
+        <li><a href="presentations.html">Presentations</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<div class="page-head">
+  <div class="container">
+    <ol class="crumbs"><li><a href="index.html">Home</a></li><li>Domain</li></ol>
+    <h1 class="rise">Domain</h1>
+    <p class="rise d1">The background, literature and methodology behind SpeakFree's four research components.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container with-toc">
+    <aside class="toc" aria-label="On this page">
+      <h4>On this page</h4>
+      <ol>
+        <li><a href="#literature-survey">Literature Survey</a></li>
+        <li><a href="#research-gap">Research Gap</a></li>
+        <li><a href="#research-problem">Research Problem</a></li>
+        <li><a href="#research-objectives">Research Objectives</a></li>
+        <li><a href="#methodology">Methodology</a></li>
+        <li><a href="#technologies">Technologies Used</a></li>
+      </ol>
+    </aside>
+    <div>
+
+      <div class="doc-section" id="literature-survey">
+        <span class="kicker">01 &middot; Literature survey</span>
+        <h2>Where existing tools fall short</h2>
+        <p>Automatic speech recognition systems such as Whisper are trained predominantly on fluent speech. On speech containing stuttering, blocks or atypical articulation, reported word error rates climb to 60 to 80 percent. That makes fluency metrics derived naively from a transcript (words per minute, articulation rate, dysfluency density) unreliable exactly where they matter most.</p>
+        <p>Dedicated stuttering event classifiers, for example models trained on the SEP-28k dataset, improve event level detection but need labelled, disorder specific data that is scarce and expensive to collect. Existing consumer and clinical screening tools are almost always evaluated only in clean, lab recorded conditions, so their behaviour in noisy, real world environments is largely unverified.</p>
+        <p>Screening protocols built around a single elicitation task, typically reading a fixed passage aloud, are also known to underestimate severity in speakers whose fluency varies across conversational, descriptive and read aloud contexts.</p>
+        <figure class="figure">
+  <a href="#lb-missed"><img src="assets/images/problem-missed.jpg" alt="Comparison of manual observation and AI speech analysis for a child's speech" loading="lazy"></a>
+  <figcaption><strong>Figure 1.</strong> Manual observation compared with digital speech analysis: subtle signs such as w for r substitution, cluster simplification and irregular intonation are easy to overlook.</figcaption>
+</figure>
+      </div>
+
+      <div class="doc-section" id="research-gap">
+        <span class="kicker">02 &middot; Research gap</span>
+        <h2>What no existing system handles together</h2>
+        <p>Most speech practice apps focus on pronunciation drills, word repetition and simple star based feedback. Manual review produces scattered notes and inconsistent observations. Neither delivers a complete, explainable screening and therapy workflow.</p>
+        <div class="figure-row">
+          <figure class="figure">
+  <a href="#lb-apps"><img src="assets/images/gap-basic-apps.jpg" alt="Basic speech practice apps and what is missing" loading="lazy"></a>
+  <figcaption><strong>Figure 2.</strong> Basic practice apps compared with the missing AI screening and therapy modules.</figcaption>
+</figure>
+          <figure class="figure">
+  <a href="#lb-results"><img src="assets/images/gap-unclear-results.jpg" alt="Unclear manual results compared with structured explainable AI results" loading="lazy"></a>
+  <figcaption><strong>Figure 3.</strong> Unstructured manual results compared with structured, explainable AI results.</figcaption>
+</figure>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Capability</th><th>Manual screening</th><th>Basic practice apps</th><th>SpeakFree</th></tr></thead>
+            <tbody>
+              <tr><td>Confidence aware ASR scoring on disordered speech</td><td class="no">No</td><td class="part">Limited</td><td class="yes">Yes</td></tr>
+              <tr><td>Phoneme level articulation analysis</td><td class="part">Expert dependent</td><td class="no">No</td><td class="yes">Yes</td></tr>
+              <tr><td>Severity prediction with probabilities</td><td class="part">Subjective</td><td class="no">No</td><td class="yes">Yes</td></tr>
+              <tr><td>Personalised, adaptive therapy plan</td><td class="part">Manual</td><td class="no">No</td><td class="yes">Yes</td></tr>
+              <tr><td>Explainable, structured results</td><td class="no">No</td><td class="no">No</td><td class="yes">Yes</td></tr>
+              <tr><td>Evaluated on noisy, browser recorded audio</td><td class="no">Not applicable</td><td class="no">Rarely</td><td class="yes">Yes</td></tr>
+              <tr><td>Therapist correction of automated scoring</td><td class="part">Not applicable</td><td class="no">No</td><td class="yes">Yes</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <ul class="bullets" style="margin-top:22px">
+          <li>No system combines confidence aware ASR with acoustic feature extraction specifically to keep fluency metrics clinically meaningful when transcription itself is unreliable.</li>
+          <li>No evaluation of a screening pipeline exists under realistic, noisy, browser recorded conditions rather than curated lab audio.</li>
+          <li>No integrated platform carries a user from initial screening through articulation analysis, severity classification and ongoing privacy preserving therapy support in one system.</li>
+          <li>Few home practice tools let a therapist's expert judgement actually correct an automated scoring model, rather than treating it as a one off satisfaction survey.</li>
+        </ul>
+      </div>
+
+      <div class="doc-section" id="research-problem">
+        <span class="kicker">03 &middot; Research problem</span>
+        <h2>One problem, four sub problems</h2>
+        <div class="callout orange">Affordable, accessible speech disorder screening and therapy support does not currently exist as a single, privacy respecting online pipeline that works in noisy, real world conditions.</div>
+        <p>The overall problem is addressed through four interdependent sub problems, one per team member:</p>
+        <div class="grid grid-2">
+          <div class="card"><span class="tag">Component 1</span><h3>Noise robust feature extraction</h3><p>How can fluency metrics stay clinically meaningful when ASR is unreliable on disordered, noisy speech?</p></div>
+          <div class="card"><span class="tag">Component 2</span><h3>Phoneme level articulation analysis</h3><p>How can articulation errors be located and classified accurately at the phoneme level?</p></div>
+          <div class="card"><span class="tag">Component 3</span><h3>AI based severity prediction</h3><p>How can fluency and articulation signals be fused into a reliable, explainable severity level?</p></div>
+          <div class="card"><span class="tag">Component 4</span><h3>Privacy preserving therapy support</h3><p>How can home therapy adapt to each user while staying correctable by experts and protecting privacy?</p></div>
+        </div>
+      </div>
+
+      <div class="doc-section" id="research-objectives">
+        <span class="kicker">04 &middot; Research objectives</span>
+        <h2>Main and specific objectives</h2>
+        <div class="callout"><strong>Main objective:</strong> to design, build and evaluate an AI based online platform that screens speech disorders from browser recorded speech, explains its findings, predicts severity and delivers personalised, privacy preserving therapy support.</div>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Component</th><th>Specific objective</th></tr></thead>
+            <tbody>
+              <tr><td>1, Screening and ASR</td><td>Develop a confidence aware ASR and noise robust feature extraction pipeline that keeps fluency metrics clinically meaningful on disordered, real world speech.</td></tr>
+              <tr><td>2, Articulation</td><td>Develop phoneme level forced alignment and articulation error detection on top of Component 1's clean speech features.</td></tr>
+              <tr><td>3, Severity</td><td>Develop an AI model that classifies overall speech disorder severity reliably and explainably from the upstream fluency and articulation signals.</td></tr>
+              <tr><td>4, Therapy</td><td>Develop a privacy preserving, expert correctable adaptive learning module for personalised home therapy and progress tracking.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="doc-section" id="methodology">
+        <span class="kicker">05 &middot; Methodology</span>
+        <h2>A design science, component integrated approach</h2>
+        <p>The project follows a design science methodology. Each component is a working software artefact, evaluated against its design intent through automated testing, manual end to end scenarios and, for Component 4, a structured expert rating and recalibration workflow. Components are developed independently against an agreed JSON interface contract and integrated in scheduled sessions, with session identifiers linking a single screening session's results across all four components.</p>
+        <h3>System architecture</h3>
+        <p>A React frontend records the speech tasks and sends the audio (.webm or .wav) to a FastAPI backend, which handles authentication, file validation and task management, stores data in PostgreSQL and forwards the audio over a secure HTTPS call to the AI analysis pipeline.</p>
+        <figure class="figure">
+  <a href="#lb-arch"><img src="assets/images/architecture.jpg" alt="SpeakFree system architecture diagram" loading="lazy"></a>
+  <figcaption><strong>Figure 4.</strong> SpeakFree architecture: React frontend, FastAPI backend and AI analysis pipeline.</figcaption>
+</figure>
+
+        <div class="component-block">
+          <span class="tag">Component 1 &middot; P.A.S.S. Kusumsiri</span>
+          <h3>Speech input processing and ASR score output</h3>
+          <ol class="pipeline"><li>Speech recording</li><li>Waveform extraction</li><li>ASR processing</li><li>Score output</li><li>JSON result</li></ol>
+          <div class="split">
+            <div>
+              <p>Speech is captured in the browser, denoised and segmented with voice activity detection. Whisper produces the transcript and confidence, while HuBERT embeddings and Librosa acoustic features keep fluency measures meaningful even when the transcript is unreliable.</p>
+              <p>Output: word accuracy, fluency score, pronunciation score and duration, delivered as structured JSON through a secure API.</p>
+            </div>
+            <figure class="figure">
+  <a href="#lb-m1"><img src="assets/images/c1-asr.jpg" alt="Component 1 ASR pipeline" loading="lazy"></a>
+  <figcaption><strong>Figure 5.</strong> Speech input processing and ASR score output.</figcaption>
+</figure>
+          </div>
+        </div>
+
+        <div class="component-block">
+          <span class="tag">Component 2 &middot; E.Y. Randiw</span>
+          <h3>Speech alignment and articulation analysis</h3>
+          <ol class="pipeline"><li>Speech input</li><li>Audio and spectrogram</li><li>Forced alignment</li><li>Phoneme segmentation</li><li>Articulation analysis</li></ol>
+          <div class="split">
+            <div>
+              <p>Words and phonemes are force aligned to the audio so each sound has a start time, end time and boundary confidence. Each phoneme is then rated as accurate, a minor deviation or a misarticulation.</p>
+              <p>Output: phoneme accuracy, timing deviation, boundary confidence, word timing consistency, misarticulation rate and flags such as /r/ to /w/ substitution or affricate distortion.</p>
+            </div>
+            <figure class="figure">
+  <a href="#lb-m2"><img src="assets/images/c2-articulation.jpg" alt="Component 2 articulation analysis" loading="lazy"></a>
+  <figcaption><strong>Figure 6.</strong> Phoneme level timing, forced alignment and articulation accuracy.</figcaption>
+</figure>
+          </div>
+        </div>
+
+        <div class="component-block">
+          <span class="tag">Component 3 &middot; I.L.S. Tharushan</span>
+          <h3>AI severity prediction and decision support</h3>
+          <div class="split">
+            <div>
+              <p>Fluency and articulation features are fused to predict a severity class (Mild 0 to 33, Moderate 34 to 66, Severe 67 to 100) with class probabilities, a 0 to 100 severity score and a confidence value.</p>
+              <p>Dimension scores for speech clarity, fluency impact, articulation impact and functional communication drive a risk level and a recommended action. Predictions support, but do not replace, clinical judgement.</p>
+            </div>
+            <figure class="figure">
+  <a href="#lb-m3"><img src="assets/images/c3-severity.jpg" alt="Component 3 severity prediction dashboard" loading="lazy"></a>
+  <figcaption><strong>Figure 7.</strong> AI severity prediction dashboard for clinical decision support.</figcaption>
+</figure>
+          </div>
+        </div>
+
+        <div class="component-block">
+          <span class="tag">Component 4 &middot; M.D.I. Perera</span>
+          <h3>Personalised therapy recommendations and progress tracking</h3>
+          <div class="split">
+            <div>
+              <p>A contextual bandit planner selects exercises (breathing, syllable repetition, articulation drills, minimal pairs, reading aloud and sentence fluency) based on disorder type, severity, weak areas and progress history.</p>
+              <p>An expert recalibratable scoring model lets clinicians correct automated scores, a conversational assistant guides home practice, and differential privacy protects cohort reports shared with therapists.</p>
+            </div>
+            <figure class="figure">
+  <a href="#lb-m4"><img src="assets/images/c4-therapy.jpg" alt="Component 4 therapy and progress dashboard" loading="lazy"></a>
+  <figcaption><strong>Figure 8.</strong> Personalised therapy recommendations and progress tracking.</figcaption>
+</figure>
+          </div>
+        </div>
+      </div>
+
+      <div class="doc-section" id="technologies">
+        <span class="kicker">06 &middot; Technologies used</span>
+        <h2>Shared and component specific technology stack</h2>
+        <div class="grid grid-2">
+          <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 4a3 3 0 0 0-3 3 3 3 0 0 0-2 5 3 3 0 0 0 2 5 3 3 0 0 0 6 1V5a2 2 0 0 0-3-1zM15 4a3 3 0 0 1 3 3 3 3 0 0 1 2 5 3 3 0 0 1-2 5 3 3 0 0 1-6 1"/></svg></div><h3>Speech and machine learning</h3><p>Speech recognition, embeddings, acoustic features and model training.</p>
+            <div class="tech-list"><span>Whisper</span><span>HuBERT</span><span>PyTorch</span><span>Hugging Face Transformers</span><span>scikit-learn</span><span>Librosa</span><span>WebRTC VAD</span><span>noisereduce</span></div></div>
+          <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M14 5l-4 14"/></svg></div><h3>Backend</h3><p>REST API, background processing and validation.</p>
+            <div class="tech-list"><span>Python</span><span>FastAPI</span><span>Uvicorn</span><span>Pydantic</span><span>Celery</span><span>Redis</span></div></div>
+          <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a3 3 0 0 0-3 3v6a3 3 0 0 0 6 0V6a3 3 0 0 0-3-3z"/><path d="M19 11a7 7 0 0 1-14 0M12 18v3"/></svg></div><h3>Frontend</h3><p>In browser recording and the assessment interface.</p>
+            <div class="tech-list"><span>React (Vite)</span><span>TypeScript</span><span>Tailwind CSS</span><span>Web Audio API</span><span>MediaRecorder</span></div></div>
+          <div class="card"><div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></div><h3>Data, security and collaboration</h3><p>Storage, secure communication and shared version control.</p>
+            <div class="tech-list"><span>PostgreSQL</span><span>JWT</span><span>HTTPS</span><span>Git</span><span>GitHub</span></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<div class="lightbox" id="lb-missed" role="dialog" aria-label="Comparison of manual observation and AI speech analysis for a child's speech">
+  <a href="#close" class="backdrop" aria-label="Close"></a>
+  <img src="assets/images/problem-missed.jpg" alt="Comparison of manual observation and AI speech analysis for a child's speech" loading="lazy">
+  <a href="#close" class="close">Close &times;</a>
+</div>
+<div class="lightbox" id="lb-apps" role="dialog" aria-label="Basic speech practice apps and what is missing">
+  <a href="#close" class="backdrop" aria-label="Close"></a>
+  <img src="assets/images/gap-basic-apps.jpg" alt="Basic speech practice apps and what is missing" loading="lazy">
+  <a href="#close" class="close">Close &times;</a>
+</div>
+<div class="lightbox" id="lb-results" role="dialog" aria-label="Unclear manual results compared with structured explainable AI results">
+  <a href="#close" class="backdrop" aria-label="Close"></a>
+  <img src="assets/images/gap-unclear-results.jpg" alt="Unclear manual results compared with structured explainable AI results" loading="lazy">
+  <a href="#close" class="close">Close &times;</a>
+</div>
+<div class="lightbox" id="lb-arch" role="dialog" aria-label="SpeakFree system architecture diagram">
+  <a href="#close" class="backdrop" aria-label="Close"></a>
+  <img src="assets/images/architecture.jpg" alt="SpeakFree system architecture diagram" loading="lazy">
+  <a href="#close" class="close">Close &times;</a>
+</div>
+<div class="lightbox" id="lb-m1" role="dialog" aria-label="Component 1 ASR pipeline">
+  <a href="#close" class="backdrop" aria-label="Close"></a>
+  <img src="assets/images/c1-asr.jpg" alt="Component 1 ASR pipeline" loading="lazy">
+  <a href="#close" class="close">Close &times;</a>
+</div>
+<div class="lightbox" id="lb-m2" role="dialog" aria-label="Component 2 articulation analysis">
+  <a href="#close" class="backdrop" aria-label="Close"></a>
+  <img src="assets/images/c2-articulation.jpg" alt="Component 2 articulation analysis" loading="lazy">
+  <a href="#close" class="close">Close &times;</a>
+</div>
+<div class="lightbox" id="lb-m3" role="dialog" aria-label="Component 3 severity prediction dashboard">
+  <a href="#close" class="backdrop" aria-label="Close"></a>
+  <img src="assets/images/c3-severity.jpg" alt="Component 3 severity prediction dashboard" loading="lazy">
+  <a href="#close" class="close">Close &times;</a>
+</div>
+<div class="lightbox" id="lb-m4" role="dialog" aria-label="Component 4 therapy and progress dashboard">
+  <a href="#close" class="backdrop" aria-label="Close"></a>
+  <img src="assets/images/c4-therapy.jpg" alt="Component 4 therapy and progress dashboard" loading="lazy">
+  <a href="#close" class="close">Close &times;</a>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="brand">
+      <img src="assets/logo/logo-icon.svg" alt="" width="42" height="42">
+      <span><span class="brand-name">Speak<span class="free">Free</span></span><span class="brand-sub">R26-IT-086 &middot; SLIIT Research Project</span></span>
+    </a>
+      <p>AI Based Speech Disorder Screening and Therapy Assistant. Empowering voices, enhancing lives.</p>
+    </div>
+    <div>
+      <h4>Research</h4>
+      <ul>
+        <li><a href="domain.html#literature-survey">Literature survey</a></li>
+        <li><a href="domain.html#research-gap">Research gap</a></li>
+        <li><a href="domain.html#methodology">Methodology</a></li>
+        <li><a href="domain.html#technologies">Technologies</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Project</h4>
+      <ul>
+        <li><a href="milestones.html">Milestones</a></li>
+        <li><a href="documents.html">Documents</a></li>
+        <li><a href="presentations.html">Presentations</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Team</h4>
+      <ul>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li>Sri Lanka Institute of Information Technology</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    An academic information website for the SpeakFree research project, kept separate from the SpeakFree software product. &copy; 2026 Team SpeakFree, R26-IT-086.
+  </div>
+</footer>
+</body>
+</html>
